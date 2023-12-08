@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Church Extensions</title>
+    <link rel="stylesheet" href="CE.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="main.html"><img src="logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="">Church Extensions</a></li>
+                    <li><a href="">Mission</a></li>
+                    <li><a href="">Ministries</a></li>
+                    <li><a href="">Department Fellowship</a></li>
+                    <li><a href="">Evangelism</a></li>
+                    <li><a href="">Donate</a></li>
+                    <li><a href="">About</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <!--Church Extention Slider-->
+        <div class="container">
+            
+            <div class="slide">
+
+                <div class="item" style="background-image: url(image1.jpg);">
+                    <div class="content">
+                        <div class="kantamayon"></div>
+                        <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, accusamus.</div>
+                        <button>See More</button>
+                    </div>
+                </div>
+
+                <div class="item" style="background-image: url(image2.jpg);">
+                    <div class="content">
+                        <div class="kantamayon"></div>
+                        <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, accusamus.</div>
+                        <button>See More</button>
+                    </div>
+                </div>
+
+                <div class="item" style="background-image: url(image3.jpg);">
+                    <div class="content">
+                        <div class="kantamayon"></div>
+                        <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, accusamus.</div>
+                        <button>See More</button>
+                    </div>
+                </div>
+
+                <div class="item" style="background-image: url(image4.png);">
+                    <div class="content">
+                        <div class="kantamayon"></div>
+                        <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, accusamus.</div>
+                        <button>See More</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScipt for toggle menu-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    
+   
+</body>
+</html>
